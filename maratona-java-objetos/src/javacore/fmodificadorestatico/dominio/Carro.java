@@ -2,24 +2,20 @@ package javacore.fmodificadorestatico.dominio;
 
 public class Carro {
     private String nome;
-    private double velocidademaxima;
+    private double velocidadeMaxima;
+    public static double velocidadeLimite = 250;
 
-    public double getVelocidadelimite() {
-        return velocidadelimite;
+    public Carro(String nome, double velocidadeMaxima) {
+        this.nome = nome;
+        this.velocidadeMaxima = velocidadeMaxima;
     }
 
-    public void setVelocidadelimite(double velocidadelimite) {
-        this.velocidadelimite = velocidadelimite;
+    public void imprime(){
+        System.out.println("-----------------");
+        System.out.println("Nome "+this.nome);
+        System.out.println("Velocidade maxima "+this.velocidadeMaxima);
+        System.out.println("Velocidade limite "+Carro.velocidadeLimite);
     }
-
-    public double getVelocidademaxima() {
-        return velocidademaxima;
-    }
-
-    public void setVelocidademaxima(double velocidademaxima) {
-        this.velocidademaxima = velocidademaxima;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -28,5 +24,12 @@ public class Carro {
         this.nome = nome;
     }
 
-    private double velocidadelimite = 250;
+    public double getVelocidadeMaxima() {
+        return velocidadeMaxima;
+    }
+
+    public void setVelocidadeMaxima(double velocidadeMaxima) {
+        this.velocidadeMaxima = velocidadeMaxima;
+    }
+
 }
