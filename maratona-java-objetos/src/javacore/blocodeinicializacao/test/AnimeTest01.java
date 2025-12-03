@@ -1,6 +1,6 @@
 package javacore.blocodeinicializacao.test;
 
-import javacore.blocodeinicializacao.domain.Anime;
+import javacore.blocodeinicializacao.dominio.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {

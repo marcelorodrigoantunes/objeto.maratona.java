@@ -1,4 +1,4 @@
-package javacore.blocodeinicializacao.domain;
+package javacore.blocodeinicializacao.dominio;
 
 public class Anime {
     private String nome;
